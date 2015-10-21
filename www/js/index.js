@@ -66,8 +66,6 @@ var app = {
 			    $("#title").attr("class", "visione4DROID");
 			    $("#textCentral").attr("class", "visione3DROID");
 			    $("#titlev1").attr("class", "visione3DROID");
-			    $("#scegliIng").show();
-			    $("#digitalIng").show();
 
                 $("#sendapp").attr("class", "visione3aDROID");
 			    $("#scegli").attr("class", "visioneDROID0");
@@ -91,19 +89,19 @@ var app = {
 		{
 			//alert("Tablet:" + isMobileScreenWidth);
 			
-			$("#testoTitolo").attr("class", "visione2aIPAD");
+			$("#testoTitolo").attr("class", "visione3IPAD");
 			$("#testo").attr("class", "visioneIPAD");
 			$("#testoCentrale").attr("class", "visione3aIPAD");
 			$("#Nome").attr("class", "visione3IPAD");
-			$("#titolo").attr("class", "visione4IPAD");
+			$("#titolo").attr("class", "visione3IPAD");
 			$("#titolov1").attr("class", "visione4IPAD");
 			$("#titolov2").attr("class", "visione4IPAD");
             $("#continua").attr("class", "visioneIPAD");
 			$("#iper").attr("class", "visioneiperIPAD");
 			$("#copertina").attr("height", "100%");
 			$("#pallina").attr("width", "46px");
-			$("#ita").attr("width", "46px");
-			$("#ing").attr("width", "46px");
+			$("#ita").attr("height", "46px");
+			$("#ing").attr("height", "46px");
 			$("#spazioipad").show();
 			$("#spazioipad3").show();
 			$("#spazioipad4").show();
@@ -167,8 +165,9 @@ var app = {
 		});
 		
 		$(document).on("touchend", "#secondo", function(e){
-			$.mobile.changePage( "#page3", { transition: "slide", changeHash: false });
-			carica2()
+			aprisms0()
+            //$.mobile.changePage( "#page3", { transition: "slide", changeHash: false });
+			//carica2()
 		});
 		
 		$(document).on("touchend", "#terzo", function(e){
@@ -321,7 +320,7 @@ function CambiaLingua(){
 			$("#schose").show();
 			$("#digitalIng").show();
 			
-			$("#img1").html("Ambulatory and Laboratory");
+			/*$("#img1").html("Ambulatory and Laboratory");
 			$("#img2").html("Met Travelers");
 			$("#img3").html("Met TH Card");
 			$("#img4").html("Met Giubileo");
@@ -329,7 +328,7 @@ function CambiaLingua(){
 			$("#img6").html("MET provides health care assistance to companies D.lgs n.81/ 2008 ");
 			$("#img7").html("met online and health care assistance by email");
 			$("#img8").html("30 years of health care support for travellers");
-			$("#img9").html("Help us to help");
+			$("#img9").html("Help us to help");*/
 			
 		}
 		else{
@@ -448,13 +447,13 @@ function carica() {
 	$("#galleriaimg").html("<tr><td width='100%' colspan='2'>&nbsp;</td></tr>");
 	
 	setTimeout (function(){
-				$("#galleriaimg").append("<tr><td width='100%' align='center' ><img src='img/fig1.jpg' width='90%'></td></tr><tr><td width='100%' colspan='2'>&nbsp;</td></tr><tr><td width='100%' align='center' ><div id='img1' class='visione3DROID' align='center'>Ambulatorio Laboratorio</div></td></tr><tr><td width='100%' colspan='2'>&nbsp;</td></tr><tr><td width='100%' align='center' ><img src='img/fig2.jpg' width='90%'></td></tr><tr><td width='100%' colspan='2'>&nbsp;</td></tr><tr><td width='100%' align='center' ><div id='img2' class='visione3DROID' align='center'>Met Viaggiatori</div></td></tr><tr><td width='100%' colspan='2'>&nbsp;</td></tr><tr><td width='100%' align='center' ><img src='img/fig3.jpg' width='90%'></td></tr><tr><td width='100%' colspan='2'>&nbsp;</td></tr><tr><td width='100%' align='center' ><div id='img3' class='visione3DROID' align='center'>Met TH Card</div></td></tr><tr><td width='100%' colspan='2'>&nbsp;</td></tr>");
+				$("#galleriaimg").append("<tr><td width='100%' align='center' ><img src='img/fig1.jpg' width='90%'></td></tr><tr><td width='100%' colspan='2'>&nbsp;</td></tr><tr><td width='100%' align='center' ><div id='img1' class='visione3DROID' align='center'></div></td></tr><tr><td width='100%' colspan='2'>&nbsp;</td></tr><tr><td width='100%' align='center' ><img src='img/fig2.jpg' width='90%'></td></tr><tr><td width='100%' colspan='2'>&nbsp;</td></tr><tr><td width='100%' align='center' ><div id='img2' class='visione3DROID' align='center'></div></td></tr><tr><td width='100%' colspan='2'>&nbsp;</td></tr><tr><td width='100%' align='center' ><img src='img/fig3.jpg' width='90%'></td></tr><tr><td width='100%' colspan='2'>&nbsp;</td></tr><tr><td width='100%' align='center' ><div id='img3' class='visione3DROID' align='center'></div></td></tr><tr><td width='100%' colspan='2'>&nbsp;</td></tr>");
 				
 				
 				$(".spinner").show();
 		
 		setTimeout (function(){
-				$("#galleriaimg").append("<tr><td width='100%' align='center' ><img src='img/fig4.jpg' width='90%'></td></tr><tr><td width='100%' colspan='2'>&nbsp;</td></tr><tr><td width='100%' align='center' ><div id='img4' class='visione3DROID' align='center'>Met Giubileo</div></td></tr><tr><td width='100%' colspan='2'>&nbsp;</td></tr><tr><td width='100%' align='center' ><img src='img/fig5.jpg' width='90%'></td></tr><tr><td width='100%' colspan='2'>&nbsp;</td></tr><tr><td width='100%' align='center' ><div id='img5' class='visione3DROID' align='center'>Studenti</div></td></tr><tr><td width='100%' colspan='2'>&nbsp;</td></tr><tr><td width='100%' align='center' ><img src='img/fig6.jpg' width='90%'></td></tr><tr><td width='100%' colspan='2'>&nbsp;</td></tr><tr><td width='100%' align='center' ><div id='img6' class='visione3DROID' align='center'>Aziende</div></td></tr><tr><td width='100%' colspan='2'>&nbsp;</td></tr><tr><td width='100%' align='center' ><img src='img/fig7.jpg' width='90%'></td></tr><tr><td width='100%' colspan='2'>&nbsp;</td></tr><tr><td width='100%' align='center' ><div id='img7' class='visione3DROID' align='center'>Met OnLine</div></td></tr><tr><td width='100%' colspan='2'>&nbsp;</td></tr><tr><td width='100%' align='center' ><img src='img/fig8.jpg' width='90%'></td></tr><tr><td width='100%' colspan='2'>&nbsp;</td></tr><tr><td width='100%' align='center' ><div id='img8' class='visione3DROID' align='center'>Cesmet 30 anni</div></td></tr></tr><tr><td width='100%' colspan='2'>&nbsp;</td></tr><tr><td width='100%' colspan='2'>&nbsp;</td></tr>");
+				$("#galleriaimg").append("<tr><td width='100%' align='center' ><img src='img/fig4.jpg' width='90%'></td></tr><tr><td width='100%' colspan='2'>&nbsp;</td></tr><tr><td width='100%' align='center' ><div id='img4' class='visione3DROID' align='center'></div></td></tr><tr><td width='100%' colspan='2'>&nbsp;</td></tr><tr><td width='100%' align='center' ><img src='img/fig5.jpg' width='90%'></td></tr><tr><td width='100%' colspan='2'>&nbsp;</td></tr><tr><td width='100%' align='center' ><div id='img5' class='visione3DROID' align='center'></div></td></tr><tr><td width='100%' colspan='2'>&nbsp;</td></tr><tr><td width='100%' align='center' ><img src='img/fig6.jpg' width='90%'></td></tr><tr><td width='100%' colspan='2'>&nbsp;</td></tr><tr><td width='100%' align='center' ><div id='img6' class='visione3DROID' align='center'></div></td></tr><tr><td width='100%' colspan='2'>&nbsp;</td></tr><tr><td width='100%' align='center' ><img src='img/fig7.jpg' width='90%'></td></tr><tr><td width='100%' colspan='2'>&nbsp;</td></tr><tr><td width='100%' align='center' ><div id='img7' class='visione3DROID' align='center'></div></td></tr><tr><td width='100%' colspan='2'>&nbsp;</td></tr><tr><td width='100%' align='center' ><img src='img/fig8.jpg' width='90%'></td></tr><tr><td width='100%' colspan='2'>&nbsp;</td></tr><tr><td width='100%' align='center' ><div id='img8' class='visione3DROID' align='center'></div></td></tr></tr><tr><td width='100%' colspan='2'>&nbsp;</td></tr><tr><td width='100%' colspan='2'>&nbsp;</td></tr>");
 					
 					$(".spinner").hide();
 					
@@ -888,6 +887,11 @@ function aprisms(){
 	$("#pippo5").show("slow");
 }
 
+function aprisms0(){
+	
+	$("#pippo0").show("slow");
+}
+
 function chiudi(){
 	
 	$("#pippo").hide( "slow" );
@@ -957,7 +961,7 @@ function aprili () {
 }
 
 function apriweb () {
-	var ref = window.open('http://www.cesmet.com/', '_system', 'location=no');
+	var ref = window.open('http://www.trattoriamontiilgirasole.it', '_system', 'location=no');
 }
 
 function apritrip () {
@@ -990,7 +994,7 @@ if(localStorage.getItem("Lingua")==2){
 function aprimail5 () {
 
 window.plugin.email.open({
-	to:      ""+ localStorage.getItem("contactemail") +"",
+	to:      ""+ localStorage.getItem("emailcontact") +"",
 	subject: "",
 	body:    "A,"+ localStorage.getItem("contact") +"",
 	isHtml:  true
