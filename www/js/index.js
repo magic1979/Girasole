@@ -92,8 +92,8 @@ var app = {
 			$("#testoTitolo").attr("class", "visione3IPAD");
 			$("#testo").attr("class", "visioneIPAD");
 			$("#testoCentrale").attr("class", "visione3aIPAD");
-			$("#Nome").attr("class", "visione3IPAD");
-			$("#titolo").attr("class", "visione3IPAD");
+			$("#Nome").attr("class", "visione3aIPAD");
+			$("#titolo").attr("class", "visione3aIPAD");
 			$("#titolov1").attr("class", "visione4IPAD");
 			$("#titolov2").attr("class", "visione4IPAD");
             $("#continua").attr("class", "visioneIPAD");
@@ -102,6 +102,7 @@ var app = {
 			$("#pallina").attr("width", "46px");
 			$("#ita").attr("height", "46px");
 			$("#ing").attr("height", "46px");
+            $("#spazioipad00").show();
 			$("#spazioipad").show();
 			$("#spazioipad3").show();
 			$("#spazioipad4").show();
@@ -863,7 +864,7 @@ function regToken() {
 	            }, 500);
 
 	            navigator.notification.alert(
-										'Nessuna Connessione Internet nel reg token, Riprova Tra Qualche Minuto',  // message
+										'Nessuna Connessione Internet, Riprova Tra Qualche Minuto',  // message
 										alertDismissed,         // callback
 										'Error',            // title
 										'OK'                  // buttonName
