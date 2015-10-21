@@ -45,8 +45,8 @@ var app = {
 				$("#testo").attr("class", "visioneDROID");
 				$("#testo3").attr("class", "visioneDROID");
 				$("#testoCentrale").attr("class", "visione3DROID");
-				$("#Nome").attr("class", "visione3aDROID");
-				$("#titolo").attr("class", "visione4DROID");
+				$("#Nome").attr("class", "visione3DROID");
+				$("#titolo").attr("class", "visione3DROID");
                 $("#titolov1").attr("class", "visione3DROID");
 			    $("#titolov2").attr("class", "visione3DROID");
                 $("#continua").attr("class", "visioneDROID");
@@ -63,7 +63,7 @@ var app = {
 				$("#textTitle3").attr("class", "visione2aDROID");
 			    $("#text").attr("class", "visioneDROID");
 				$("#text3").attr("class", "visioneDROID");
-			    $("#title").attr("class", "visione4DROID");
+			    $("#title").attr("class", "visione3DROID");
 			    $("#textCentral").attr("class", "visione3DROID");
 			    $("#titlev1").attr("class", "visione3DROID");
 
@@ -131,7 +131,7 @@ var app = {
 			$("#textTitle3").attr("class", "visione2aIPAD");
 			$("#text").attr("class", "visioneIPAD");
 			$("#text3").attr("class", "visioneIPAD");
-			$("#title").attr("class", "visione4IPAD");
+			$("#title").attr("class", "visione3IPAD");
 			$("#textCentral").attr("class", "visione3aIPAD");
 			$("#titlev1").attr("class", "visione2aIPAD");
 			$("#schose").show();
@@ -895,6 +895,11 @@ function aprisms0(){
 function chiudi(){
 	
 	$("#pippo").hide( "slow" );
+}
+
+function chiudi0(){
+	
+	$("#pippo0").hide("slow");
 }
 
 function chiudi5(){
