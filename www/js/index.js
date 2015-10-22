@@ -45,7 +45,7 @@ var app = {
 				$("#testo").attr("class", "visioneDROID");
 				$("#testo3").attr("class", "visioneDROID");
 				$("#testoCentrale").attr("class", "visione3DROID");
-				$("#Nome").attr("class", "visione3DROID");
+				$("#Nome").attr("class", "visione3bDROID");
 				$("#titolo").attr("class", "visione3DROID");
                 $("#titolov1").attr("class", "visione3DROID");
 			    $("#titolov2").attr("class", "visione3DROID");
@@ -92,7 +92,7 @@ var app = {
 			$("#testoTitolo").attr("class", "visione3IPAD");
 			$("#testo").attr("class", "visioneIPAD");
 			$("#testoCentrale").attr("class", "visione3aIPAD");
-			$("#Nome").attr("class", "visione3aIPAD");
+			$("#Nome").attr("class", "visione3bIPAD");
 			$("#titolo").attr("class", "visione3aIPAD");
 			$("#titolov1").attr("class", "visione4IPAD");
 			$("#titolov2").attr("class", "visione4IPAD");
@@ -1011,7 +1011,7 @@ window.plugin.email.open({
 function aprimail0 () {
 
 window.plugin.email.open({
-	to:      "info@cesmet.com",
+	to:      "trattoria.ilgirasole@yahoo.it",
 	subject: "info",
 	body:    "",
 	isHtml:  true
